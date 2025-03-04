@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Raphael";
+  src: url("fonts/Raphael.TTF");
+  
+
+}
+
+@font-face {
+  font-family: "Solstice";
+  src: url("fonts/Solstice.TTF");
+  
+
+}
+@font-face {
+  font-family: "WhirligigBigOne";
+  src: url("fonts/WhirligigBigOne.otf")
+
+}
+
+@font-face {
+  font-family: "Garmd ITC";
+  src: url("fonts/GarmdITC.ttf")
+
+} 
+html, body{
+ height: 100%; 
+}
+
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(#bd198c, #eeacd2);
+}
+
+.bg-img{
+    background-image: url(images/leopard\ print\ b.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1 {
+    
+    font-family: "Solstice";
+    font-size: 40px;
+    text-shadow: 2px 2px 5px #ffffff;
+    transition: background-color 0.3s;
+}
+.h2 {
+  color: black; 
+  font-family: "Garmd ITC";
+  font-size: 40px;
+  text-shadow: 2px 2px 5px #ffffff;
+  transition: background-color 0.3s;
+  align-items: center;
+}
+
+
+.navbar-brand {
+  font-family: "Raphael";
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  text-shadow: 2px 2px 5px #ffffff;
+  transition: background-color 0.3s;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  gap: 20px;
+  padding-left: 0; 
+  margin-right: auto; 
+  
+}
+.nav li {
+  display: flex;
+  align-items: center; 
+  flex-direction: row
+}
+.nav a, .nav-pills a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px; 
+  border-radius: 4px; 
+  transition: background-color 0.3s;
+  box-shadow: 0.3s;
+  text-shadow: 2px 2px 5px #ffffff;
+}
+
+.nav a:hover {
+  background-color: #eeacd2;
+}
+
+.nav a:hover, .nav-pills a:hover {
+  background-color: #eeacd2;
+  box-shadow: 0 0 5px 5px #ffffff;
+} 
+
+.nav a:focus, .nav a:active, .nav-pills a:focus, .nav-pills a:active {
+  box-shadow: 0 0 5px 5px #ff69b4;
+}
+
+.nav-link.active {
+  color: #a10b63; 
+  text-decoration: none;
+}
+
+ul{
+  display: flex; 
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.whirligig {
+  font-family: "WhirligigBigOne";
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-left: auto;
+  text-shadow: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.ol{
+  display:flex;
+  flex-direction: row;
+  padding: 1rem 0 1.5rem;
+  list-style: none;
+  
+}
+
+.img-thumbnail{
+  border-radius: 15px;
+  height:135px;
+  width:250px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  gap: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+figcaption {
+  text-decoration: none;
+  color: rgb(75, 73, 73);
+}
+figcaption a {
+  text-decoration: none;
+  color: rgb(75, 73, 73);
+}
+
+figcaption :hover {
+  background-color: #eeacd2;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+  transition: 0.3s;
+  border-radius: 15px;
+  background-color: white;
+  background: linear-gradient(rgb(236, 155, 203), #ffffff);
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgb(236, 155, 203);
+}
+
+.navbar {
+  background-image: url('images/leopard print b.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgb(65, 62, 62);
+  transition: 0.3s;
+
+}
+
+.form-group {
+  margin-bottom: 15px; /* Add margin to separate elements vertically */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary, .btn-secondary {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+.btn-primary {
+  background-color: #eeacd2; /* Match the nav-pill hover color */
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #ff69b4; /* Match the pink glow on hover */
+  box-shadow: 0 0 5px 5px #ffffff; /* Add white glow on hover */
+}
+
+.btn-secondary {
+  background-color: #a10b63; /* Different color for reset button */
+}
+.bg-img {
+  position: relative;
+  background-image: url(images/leopard\ print.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 2rem;
+  width: 80%; /* Adjust the width to make the div smaller */
+  margin: 0 auto; /* Center the div horizontally */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin-top: 20px; /* Add top margin */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+
+
+.foreground-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 300px; /* Adjust the width to make the photo bigger */
+  height: auto;
+  padding: 2rem;
+}
+
+
+h2{
+  text-align: center;
+}
+
+
